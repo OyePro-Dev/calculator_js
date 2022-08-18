@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Arithmetic Calculator</title>
+    <style type="text/css">
+    .sep {
+        display: flex;
+        width: 22%;
+        justify-content: space-between;
+        align-items: left;  
+        margin: 0 10px; 
+    }
+    
+    .sep > div {
+        margin-left: 2px;
+    }
+
+    </style>
+</head>
+<body>
+
+    <div>
+        <h1>Calculator</h1>
+        <div>
+            <button type="submit" onclick="basicArithmetic()" style="padding: 5px;">calculate</button>
+        </div>
+    </div>
+
+
+    <div>
+        <h1>Calculating Separately</h1>
+        <div class="sep">
+            <div>
+                <button type="submit" onclick="calSum()">Sum</button>
+            </div>
+            <div>
+                <button type="submit" onclick="calSubtract()">Subtract</button>
+            </div>
+            <div>
+                <button type="submit" onclick="calMultiply()">Multiply</button>
+            </div>
+            <div>
+                <button type="submit" onclick="calDivide()">Divide</button>
+            </div>
+        </div>
+    </div>
+    
+<script src="script.js"></script>
+</body>
+</html>
